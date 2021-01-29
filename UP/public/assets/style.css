@@ -1,0 +1,767 @@
+/*  
+Date: 12/14/2020
+
+Company: ProNet LLC
+
+Author: Gulbahar Jafarova */
+
+/*-----------------------------------
+# General 
+------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+}
+a{
+text-decoration: none !important;
+}
+body{
+background: #DCE8FF !important;
+}
+.h1, .h2, .h3, h1, h2, h3 {
+margin-top: 0px !important;
+margin-bottom: 0px !important;
+}
+.h4, .h5, .h6, h4, h5, h6{
+margin-top: 0px !important;
+margin-bottom: 0px !important;
+}
+#main .content{
+background-color: #ffffff;
+height: 650px;
+margin-top: 60px;
+border-radius: 8px;
+margin-left: 10px;
+margin-right: 10px;
+}
+/*--------------------------
+Navbar section
+--------------------------*/
+#navbar{
+height: 100%;
+background: #35A0EE;
+border-radius: 8px 0px 0px 8px;
+}
+.logo{
+top: 40px;
+left: 40px;
+height: 15%;
+position: relative;
+}
+.menus{
+height: 45%;
+margin-left: 45px;
+}
+.menus  ul li a{
+margin-left: 15px;
+color: rgba(255, 255, 255, 0.5);
+
+}
+.menus ul li a:hover{
+
+color: rgba(255, 255, 255, 0.5);
+
+}
+.menus ul li{
+ list-style-type: none;
+ position: relative;
+ line-height: 4;
+ font-family: Montserrat Alternates;
+ font-weight: 700;
+ font-size: 14px;
+ margin-right: 5px;
+}
+
+.menus ul li:before{
+position: absolute;
+content: '';
+width: 24px;
+height: 24px;
+left: -19.7px;
+top: 14.4px;
+border: 3px solid;
+color: rgba(255, 255, 255, 0.5);
+border-radius: 2px;
+}
+
+.menus ul li:after{
+position: absolute;
+content: '';
+width: 10px;
+height: 10px;
+background-color:  rgba(255, 255, 255, 0.5);
+left: -13.4px;
+top: 21.3px;
+border-radius: 2px;
+display: none;
+}
+.menus ul li:nth-child(3) span{
+  display: none !important;
+}
+.menus ul li span{
+position: relative;
+}
+.menus ul li span:after{
+position: absolute;
+content: '';
+height: 24px;
+background-color: #35a0ee;
+left: -10px;
+top: 24px;
+border-left: 4px dashed rgba(255, 255, 255, 0.5);;
+}
+
+.menus ul li.active a{
+margin-left: 15px;
+color: #ffffff
+}
+.menus ul li.active:after{
+display: block;
+color: #ffffff;
+background-color: #ffffff;
+}
+.menus ul li.active:before{
+display: block;
+color: #ffffff;
+}
+.menus ul li.active span:after{
+border-left: 4px dashed #ffffff;
+}
+/*---------------------------
+Quote sub section
+---------------------------*/
+.quote{
+height: 200px;
+margin: auto;
+width: 86%;
+background: #FFFFFF;
+box-shadow: 0px 0px 56px rgba(0, 133, 255, 0.05);
+border-radius: 8px;
+overflow: hidden;
+}
+.quote_content{
+position: relative;
+}
+.quote_content:before{
+content: url(./images/quote.png);
+display: flex;
+align-items: center;
+justify-content: center;
+position: absolute;
+width: 50px;
+height: 50px;
+background: #FFFFFF;
+box-shadow: 16px 12px 56px rgba(11, 29, 46, 0.15);
+border-radius: 3px;
+z-index: 1;
+top: -27px;
+left: 25px;
+}
+.quote p{
+font-family: Montserrat;
+font-style: italic;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.02em;
+color: #A4AEB4;
+}
+.quote .quote_text{
+padding: 25px 30px;
+padding-bottom: 0px;
+}
+.quote span{
+position: relative;
+}
+.quote span:before{
+content: '';
+position: absolute;
+width: 223px;
+height: 46px;
+transform: rotate(-11deg);
+left: -26px;
+top: -26px;
+background: #35A0EE;
+opacity: 0.07;
+}
+
+.author-logo .authorName{
+width: 70%;
+position: relative;
+left: 26px;
+}
+
+.author-logo .subLogo{
+width: 30%;
+position: relative;
+left: 26px;
+top: 20px;
+}
+
+
+.authorName h3{
+font-family: Montserrat Alternates;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.02em;
+color: #07111B;
+
+}
+
+.authorName h6{
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0.02em;
+color: #A4AEB4;
+}
+/*------------------------------
+1 .Contact detalies
+------------------------------*/
+
+#contact .general-Header h4,
+#Investment .general-Header h4,
+#InvestmentPref .general-Header h4{
+opacity: 0.8;
+}
+#contact  .general-Header h5,
+#contact  .general-Header h4,
+#Investment .general-Header h4,
+#Investment .general-Header h5,
+#contact  .general-Header h5,
+#contact  .general-Header h4,
+#InvestmentPref .general-Header h4,
+#InvestmentPref .general-Header h5{
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.02em;
+color: #A4AEB4;
+}
+#contact .general-Header h5 span a,
+#InvestmentPref .general-Header h5 span a,
+#Investment .general-Header h5 span a{
+font-weight: 600;
+color: #2696E8;
+
+}
+#contact .general-Header .headerText,
+#Investment .general-Header .headerText,
+#InvestmentPref .general-Header .headerText{
+top: 40px;
+position: relative;
+padding-left: 85px;
+}
+#contact .contactHeadText,
+#Investment .contactHeadText,
+#InvestmentPref .contactHeadText{
+position: relative;
+ top: 70px;
+ padding-left: 100px;
+}
+#contact .contactHeadText h1,
+#Investment .contactHeadText h1,
+#InvestmentPref .contactHeadText h1{
+font-family: Montserrat Alternates;
+font-style: normal;
+font-weight: 800;
+font-size: 20px;
+line-height: 36px;
+letter-spacing: 0.02em;
+color: #0B1D2E;
+}
+#contact .contactHeadText p,
+#Investment .contactHeadText p,
+#InvestmentPref .contactHeadText p{
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.02em;
+
+color: #A4AEB4;
+
+}
+
+/*form*/
+
+
+.ContactForm{
+top: 75px;
+padding-left: 100px !important;
+}
+.ContactForm label{
+top: 25px !important;
+left: 15px !important;
+}
+
+
+.contactHeadText p{
+width: 550px;
+}
+
+.md-form .input-group {
+border:none !important;
+}
+.md-form label{
+font-size: 14px !important;
+}
+.input-phone .f16{
+background-color: #ffffff !important;
+color: #000000 !important;
+box-shadow: none !important;
+margin-bottom: 0 !important;
+margin-top: 5px !important;
+border-bottom: 1px solid #d3d1d1;
+margin-right: 0px;
+border-radius: 0px;
+top: 1px;
+position: relative;
+padding-bottom: 11px;
+}
+.btn.btn-default.f16.dropdown-toggle{
+  display: flex;
+  align-items: center;
+}
+.form-control{
+padding-bottom: 5px !important;
+}
+.input-phone .btn-default:focus, 
+
+.input-phone .btn-default:hover{
+background-color: #ffffff !important;
+}
+.input-phone ul{
+border: 1px solid #d6daf2;
+height: 200px;
+overflow: auto;
+
+}
+#phoneNumber{
+padding-bottom: 8.5px !important;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+color:    #fff !important;
+}
+#contact .md-form{
+margin-bottom: 0px;
+}
+/*bottom text*/
+.contactBottomText h1{
+font-family: Montserrat Alternates;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 28px;
+color: #0B1D2E;
+}
+.contactBottomText p{
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 141%;
+color: #A4AEB4;
+width: 550px;
+margin-top: 5px;
+margin-bottom: 5px;
+
+}
+.contactBottomText{
+ top: 100px;
+ padding-left: 100px !important;
+
+}
+.contactBottomText h5 a{
+font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.02em;
+color: #2696E8;
+
+}
+#contact .contactBottomText_last{
+  top: 150px;
+}
+.contactBottomText_last{
+top: 140px;
+padding-left: 85px !important;
+}
+.contactBottomText_last h5 a{
+font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.02em;
+color: #2696E8;
+background-color: transparent !important;
+}
+.contactBottomText_last h5 a:hover{
+ box-shadow: none !important;
+
+}
+.contactBottomText_last h5 span:hover{
+  color: #2696E8 !important;
+}
+
+.contactBottomText_last a{
+border-radius: 4px;
+padding: 12px 24px;
+margin-right: 5px;
+cursor: pointer;
+}
+.contactBottomText_last a:nth-child(1){
+background: rgba(53, 160, 238, 0.1);
+}
+
+
+.contactBottomText_last a:nth-child(2){
+background: #35A0EE;
+box-shadow: 0px 0px 20px rgba(53, 160, 238, 0.25);
+
+}
+.contactBottomText_last a:nth-child(2):hover{
+ background: rgba(53, 160, 238, 0.1);
+  box-shadow: none;
+}
+.contactBottomText_last a:nth-child(2):hover span{
+color: #35A0EE;
+}
+.contactBottomText_last a:nth-child(1) span{
+color: #35A0EE;
+}
+.contactBottomText_last a:nth-child(2) span{
+color: #ffffff;
+}
+.contactBottomText_last a{
+font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+letter-spacing: 0.02em;
+}
+.dropMenuCountry{
+width: 536px;
+}
+
+
+/*----------------------
+2 .Investment Plans
+------------------------*/
+#Investment .investCenterText{
+top: 75px;
+padding-left: 100px;
+}
+#Investment .investCenterText h3,
+#InvestmentPref .investCenterText h3{
+font-family: Montserrat Alternates;
+font-style: normal;
+font-weight: bold;
+font-size: 21px;
+line-height: 28px;
+color: #0B1D2E;
+}
+
+#Investment .ContactForm{
+top: 100px;
+padding-left: 100px ;
+}
+#Investment .ContactForm label{
+top: 25px ;
+left: 15px ;
+}
+#Investment .investScala{
+top: 60px;
+margin-left: 80px;
+}
+
+#Investment .investScala .from,
+#Investment .investScala .to{
+cursor: pointer;
+}
+
+#Investment .contactBottomText_last{
+top: 190px;
+}
+
+/*Radio Input style*/
+.radio-item span{
+color: #000000;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.02em;
+color: #0B1D2E;
+display: flex !important;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+
+}
+label > input[type="radio"] {
+display: none;
+}
+label > input[type="radio"] + *::before {
+content: "";
+display: inline-block;
+vertical-align: bottom;
+width: 1rem;
+height: 1rem;
+margin-right: 0.3rem;
+border-radius: 50%;
+border-style: solid;
+border-width: 0.1rem;
+border-color: #D5D9DC;
+}
+label > input[type="radio"]:checked + * {
+color: #35A0EE;
+}
+label > input[type="radio"]:checked + *::before {
+background: radial-gradient(#35A0EE 0%, #35A0EE 40%, transparent 50%, transparent);
+border-color:#35A0EE;
+}
+label > input[type="radio"]:checked + *{
+border: 2px solid #35A0EE;
+}
+
+label > input[type="radio"] + * {
+display: inline-block;
+background: #F7FBFF;
+border: 2px solid #D5D9DC;
+border-radius: 4px;
+padding: 8px 40px;
+}
+
+
+
+
+label > input[type="checkbox"] {
+display: none;
+}
+label > input[type="checkbox"] + *::before {
+content: "";
+display: inline-block;
+vertical-align: bottom;
+width: 1rem;
+height: 1rem;
+margin-right: 0.3rem;
+border-radius: 2px;
+border-style: solid;
+border-width: 0.1rem;
+border-color: #D5D9DC;
+
+}
+label > input[type="checkbox"]:checked + * {
+color: #35A0EE;
+}
+label > input[type="checkbox"]:checked + *::before{
+background-color:  #35A0EE;
+border-color: #35A0EE;
+color: #35A0EE;
+
+}
+label > input[type="checkbox"]:checked + *::after {
+content: '';
+position: absolute;
+width: 7px;
+height: 13px;
+border: 3px solid;
+transform: rotate(45deg);
+border-top: none;
+border-left: none;
+left: 31px;
+top: 12px;
+color: #ffffff;
+}
+label > input[type="checkbox"]:checked + *{
+border: 2px solid #35A0EE;
+background: #F7FBFF;
+}
+
+label > input[type="checkbox"] + * {
+display: inline-block;
+border: 2px solid #D5D9DC;
+border-radius: 4px;
+padding: 10px 10px;
+width: 100%;
+height: 100%;
+display: grid;
+}
+.interested span p{
+margin-bottom: 0px;
+padding-top: 50px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+letter-spacing: 0.02em;
+}
+.interested label{
+cursor: pointer;
+}
+
+#InvestmentPref .investCenterText{
+top: 75px;
+padding-left: 100px;
+}
+
+.caret{
+  position: relative;
+}
+.caretContry::before{
+  position: absolute;
+  display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+  bottom: 30px;
+  right: 0px;
+}
+
+
+/*Investment Rule*/
+#Investment .investScala{
+  top: 60px;
+  margin-left: 80px;
+  margin-bottom: 40px;
+  }
+  
+  #Investment .noUi-horizontal {
+  height: 7px;
+  margin-top: 40px;
+  }
+  #Investment .noUi-horizontal .noUi-handle {
+  width: 15px;
+  height: 15px;
+  right: -9px;
+  top: -6px;
+  border-radius: 1px;
+  }
+  
+  #Investment .noUi-handle {
+  border: 1px solid #35A0EE;;
+  border-radius: 3px;
+  background: #35A0EE;
+  box-shadow: none;
+  outline: none;
+  
+  }
+  #Investment .noUi-handle:before, 
+  #Investment .noUi-handle:after{
+  display: none;
+  }
+  #Investment .noUi-target {
+  width: 100%;
+  background: #E9F0F5;
+  border-radius: 1px;
+  box-shadow: none;
+  border: none;
+  height: 4px;
+  }
+  
+  
+  #Investment .contactBottomText_last{
+  top: 140px;
+  }
+  
+  #Investment .noUi-connect{
+  background-color:  #35A0EE;
+  }
+  .ruler {
+  position: relative;
+  width: 100%;
+  margin: 0px auto;
+  height: 14px;
+  }
+  .ruler .cm{
+  position: absolute;
+  border-left: 3px solid #A1AFB8;
+  height: 14px;
+  top: -9px;
+  
+  
+  }
+  .ruler .cm:after {
+  position: absolute;
+  bottom: -15px;
+  right: -26px;
+  top: 23px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  
+  letter-spacing: 0.02em;
+  
+  color: #A1AFB8;
+  }
+  .ruler .cm:nth-of-type(1) {
+  left: 0%;
+  }
+  .ruler .cm:nth-of-type(1):after {
+  content: "$10,000";
+  }
+  
+  .ruler .cm:nth-of-type(2) {
+  left: 20%;
+  }
+  .ruler .cm:nth-of-type(2):after {
+  content: "$20,000";
+  }
+  .ruler .cm:nth-of-type(3) {
+  left: 40%;
+  }
+  .ruler .cm:nth-of-type(3):after {
+  content: "$40,000";
+  }
+  .ruler .cm:nth-of-type(4) {
+  left: 60%;
+  }
+  .ruler .cm:nth-of-type(4):after {
+  content: "$60,000";
+  }
+  .ruler .cm:nth-of-type(5) {
+  left: 80%;
+  }
+  .ruler .cm:nth-of-type(5):after {
+  content: "$80,000";
+  }
+  .ruler .cm:nth-of-type(6) {
+  left: 100%;
+  }
+  .ruler .cm:nth-of-type(6):after {
+  content: "$1,000,000+";
+  }
+  .ruler .cm:nth-of-type(7) {
+  left: 110%;
+  }
+  
+  
+  #mentionme{  
+  text-align:center;
+  margin-top:10%;
+  }

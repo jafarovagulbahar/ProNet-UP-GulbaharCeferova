@@ -1,0 +1,169 @@
+
+
+@media only screen and (max-width: 900px) {
+.logo img{
+width: 140px;
+}
+.quote_content{
+z-index: 22;
+}
+.quote{
+width: 100%;
+}
+.quote .quote_text {
+padding: 0px 10px;
+padding-top: 20px;
+}
+.quote .quote_text p {
+font-size: 12px;
+letter-spacing: 0;
+}
+.authorName h3,
+.authorName h6{
+font-size: 13px;
+}
+
+.author-logo .subLogo {
+width: 20%;
+left: 6px;
+top: 4px;
+}
+#contact .contactHeadText{
+top: 40px;
+}
+#contact .contactHeadText h1,
+#Investment .contactHeadText h1,
+#InvestmentPref .contactHeadText h1{
+font-size: 14px;
+}
+#contact .general-Header .headerText,
+#Investment .general-Header .headerText, 
+#InvestmentPref .general-Header .headerText{
+padding-left: 0px;
+}
+#contact .contactHeadText,
+#Investment .contactHeadText,
+#InvestmentPref .contactHeadText {
+	padding-left: 0px;
+}
+#Investment .investCenterText h3, 
+#InvestmentPref .investCenterText h3{
+font-size: 12px;
+line-height: 1;
+}
+.md-form{
+margin-bottom: 0px !important;
+}
+.ContactForm,
+.contactBottomText,
+.contactBottomText_last{
+padding-left: 0px !important;
+}
+#Investment .investCenterText,
+#InvestmentPref .investCenterText{
+padding-left: 0px;
+}
+#Investment .investScala{
+margin-left: 0px;
+margin-bottom: 0px;
+}
+#Investment .contactBottomText_last{
+top: 95px;
+}
+#InvestmentPref .contactBottomText_last{
+top: 90px;
+}
+.interested {
+max-width: 100% !important;
+padding-right: 0px;
+background-color: #ffffff;
+
+}
+.interested span p {
+margin-bottom: 0px;
+padding-top: 3px;
+font-size: 8px;
+ letter-spacing: 0em; 
+}
+.radio-item label > input[type="radio"] + *{
+padding: 2px 40px;
+}
+.ruler .cm:after {
+bottom: -15px;
+right: -13px;
+top: 17px;
+font-size: 6px;
+}
+#navbar{
+height: 68%;
+border-radius: 8px 8px 8px 8px;
+}
+
+#main .secondContent{
+background: #ffffff;
+top: 0px;
+height: 110%;
+}  
+.general-Header h4,
+.general-Header h5{
+	font-size: 12px !important;
+}
+.contactHeadText p {
+width: 100%;
+font-size: 13px;
+}
+.ContactForm {
+top: 10px;
+}
+
+
+.contactBottomText{
+top: 0px;
+}
+.contactBottomText p{
+width: 100%;
+font-size: 13px;
+}
+.contactBottomText h1{
+font-size: 14px;
+}
+.contactBottomText_last{
+top: 90px !important;
+}
+
+.contactBottomText_last span {
+
+padding: 1px 10px;
+ margin-right: 0px; 
+
+}
+.contactBottomText_last span a{
+font-size: 10px;
+
+}
+.contactBottomText_last h5{
+font-size: 10px;
+}
+.contactBottomText_last h5 a{
+font-size: 10px;
+line-height: 0px;
+}
+
+.contactBottomText h5 a{
+font-size: 12px;
+}
+.contactBottomText_last a {
+  
+    font-size: 12px;
+    line-height: 2px;
+    text-align: center;
+    padding: 20px 2px;
+    display: block;
+}
+.dropMenuCountry{
+	width: 100%;
+}
+
+
+
+}
